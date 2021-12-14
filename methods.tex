@@ -18,6 +18,7 @@ We adapted Online-aware Meta-learning (OML) as our meta-objective for updating $
        = \sum_{\mathcal{T}_i \sim p(\mathcal{T})} \sum_{\mathcal{S}_k ^ j \sim p(\mathcal{S}_k | \mathcal{T}_i)} [\mathcal{L}_i (U(W, \theta, \mathcal{S}_k ^ j)]
    \end{aligned}
 \end{equation}
+
 where $p(\mathcal{T})$ is the assumed distribution for this continual learning problem; $\mathcal{S}_k ^ j = (X_{j+1}^i, Y_{j+1}^i), ..., (X_{j+k}^i, Y_{j+k}^i)$, a random trajectory of length $k$ sampled from $p(\mathcal{T})$. And $U(W, \theta, \mathcal{S}_k ^ j) = (W_{t+k}, \theta)$ is an updated function where $W_{t+k}$ is the weights of Adaption Module after $k$ steps of parameter updates, where the $jth$ update step in $U$ is on parameters $(W_{t+j-1}, \theta)$ with samples $(X_{j+t}^i, Y_{j+t}^i)$. We can see that OML only uses one data point from the trajectory, $\mathcal{S}_k ^ j$, which would help the model overcome the common problems of catastrophic forgetting in continual learning. 
 
 Here, we use BERT * as our Representation Module due to its strong linguistic representation learning ability and a one-layer fully-connected network as our Adaption Module. 
