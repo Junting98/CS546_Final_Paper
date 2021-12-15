@@ -1,0 +1,9 @@
+\subsection{Few-shot Event Detection}
+\label{sec:rw_event_detection}
+Many methods have been proposed to address the few-shot event detection problem. \citet{bronstein2015seed} identify new event with feature-based method by collecting seed triggers. \citet{deng2020meta} divide the few-shot event detection into trigger extraction and few-shot classification. \citet{feng2020probing} conduct few-show classification without triggers on sentence-level. \citet{chen2021honey} using the causal intervention to address the few-shot problem.
+
+\subsection{Continual Learning}
+\label{sec:rw_continual_learning}
+Much efforts have been put to study the continual learning problems. Major methods can be divided into three categories or the combination of these categories: significant parameter based methods \citep{kirkpatrick2017overcoming, aljundi2018memory}; rehearsal based methods \citep{rebuffi2017icarl, hou2019learning, shin2017continual, li2017learning, cao2020incremental}; and sparse representation methods \citep{liu2019utility, aljundi2018selfless}.
+The significant parameter based methods try to recognize and reserve the significant parameters trained on old data. But it is hard to devise suitable metrics to evaluate the parameters. The rehearsal-based methods try to preserve previous knowledge via storing a few old data\citet{rebuffi2017icarl, hou2019learning}, via generative models learned on old data\citet{shin2017continual}, via knowledge distillation\citep{li2017learning}. \citep{cao2020incremental} indicates that these methods cannot
+handle semantic ambiguity problem and class imbalance problem in incremental event detection. So they proposed \textit{Knowledge Consolidation Networks} based on both replay-based and knowledge distillation methods to handle these issues. However, they ignore the long-tail distribution problem \citep{yu2021lifelong}.
