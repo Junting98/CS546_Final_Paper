@@ -1,6 +1,6 @@
 \subsection{Meta-learning Representation Learning}
 \label{sec:mlr}
-Here we propose a model-agnostic meta-learning framework composed of two modules: $\phi_\theta(X)$, a deep Representation Module (RM) parametrized by $\theta$ - from $X$ to $\mathbb{R} ^ {h}$; $g_W$, an Adaption Module (AM) parameterized by $W$ - from $\mathbb{R} ^ {h}$ to $y$. The architecture of this composed module, $f_{\theta, w} = g_W(\phi_\theta(X))$ is shown in figure \ref{img:1} . We follow a similar setup as \citep{javed2019meta}: $\theta$ is a meta-parameter that is learned by minimizing the meta-objective and is only updated during meta-training. Then, $W$ is learned from trajectory using fully online stream data in a single pass.
+Here we propose a model-agnostic meta-learning framework composed of two modules: $\phi_\theta(X)$, a deep Representation Module (RM) parametrized by $\theta$ - from $X$ to $\mathbb{R} ^ {h}$; $g_W$, an Adaption Module (AM) parameterized by $W$ - from $\mathbb{R} ^ {h}$ to $y$. The architecture of this composed module, $f_{\theta, w} = g_W(\phi_\theta(X))$ is shown in figure \ref{img:1} . We follow a similar setup as **: $\theta$ is a meta-parameter that is learned by minimizing the meta-objective and is only updated during meta-training. Then, $W$ is learned from trajectory using fully online stream data in a single pass.
 \begin{figure*}[ht]
 \centering
     \includegraphics[scale=0.6]{imgs/meta-training.png}
@@ -10,15 +10,15 @@ Here we propose a model-agnostic meta-learning framework composed of two modules
 
 We adapted Online-aware Meta-learning (OML) as our meta-objective for updating $\theta$ in Representation Module. OML objective could help maximize fast adaption for training the Representation Module as well as minimizing interference and is defined as:
 \begin{equation}
-    \begin{aligned}
-       \min_{W, \theta} \sum_{\mathcal{T}_i \sim p(\mathcal{T})} \mathrm{OML}(W, \theta) \\
-       = \sum_{\mathcal{T}_i \sim p(\mathcal{T})} \sum_{\mathcal{S}_k ^ j \sim p(\mathcal{S}_k | \mathcal{T}_i)} [\mathcal{L}_i (U(W, \theta, \mathcal{S}_k ^ j)]
-   \end{aligned}
+    \begin{split}
+       &\min_{W, \theta} \sum_{\mathcal{T}_i \sim p(\mathcal{T})} \mathrm{OML}(W, \theta) \\
+       &= \sum_{\mathcal{T}_i \sim p(\mathcal{T})} \sum_{\mathcal{S}_k ^ j \sim p(\mathcal{S}_k | \mathcal{T}_i)} [\mathcal{L}_i (U(W, \theta, \mathcal{S}_k ^ j)]
+   \end{split}
 \end{equation}
 
 where $p(\mathcal{T})$ is the assumed distribution for this continual learning problem; $\mathcal{S}_k ^ j = (X_{j+1}^i, Y_{j+1}^i), ..., (X_{j+k}^i, Y_{j+k}^i)$, a random trajectory of length $k$ sampled from $p(\mathcal{T})$. And $U(W, \theta, \mathcal{S}_k ^ j) = (W_{t+k}, \theta)$ is an updated function where $W_{t+k}$ is the weights of Adaption Module after $k$ steps of parameter updates, where the $jth$ update step in $U$ is on parameters $(W_{t+j-1}, \theta)$ with samples $(X_{j+t}^i, Y_{j+t}^i)$. We can see that OML only uses one data point from the trajectory, $\mathcal{S}_k ^ j$, which would help the model overcome the common problems of catastrophic forgetting in continual learning. 
 
-Here, we use BERT \citep{devlin2018bert} as our Representation Module due to its strong linguistic representation learning ability and a one-layer fully-connected network as our Adaption Module. 
+Here, we use BERT * as our Representation Module due to its strong linguistic representation learning ability and a one-layer fully-connected network as our Adaption Module. 
 
 \subsection{Meta-Training and Meta-Testing Workflow}
 As stated in section \ref{sec:mlr}, we update both Representation Module and Adaption Module only in meta-training phase, which is composed of four steps as shown in figure 2 below: 

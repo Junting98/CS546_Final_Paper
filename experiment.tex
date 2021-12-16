@@ -30,6 +30,7 @@ We adopted two widely used datasets for event detection and created the continua
 \subsection{Meta-Training and Meta-Testing Detail}
 \textbf{Meta-Training}: 
 
+\noindent
 \textbf{Meta-Testing}: 
 
 \subsection{Baselines}
@@ -45,7 +46,14 @@ We compare out approach with the following baselines:
 \textbf{KCN}\citep{cao2020incremental}: KCN focuses on incremental event detection and uses prototype enhanced retrospection and hierarchical distillation to mitigate the adverse effects of semantic ambiguity and class imbalance. We initialized the language model used in KCN with a pretrained language model that is trained on the meta-training set to ensure a fair comparison. 
 
 %We have not include the work by \cite{yu2021lifelong} 
-We also implemented a model of  \cite{yu2021lifelong} following our experimental setup. However, this method could only reach an accuracy of ~0.4 while our method or KCN could reach ~0.7. There are some possible explanations for this result: 1. There might be some implementation errors of  \cite{yu2021lifelong} or a different configuration of hyper-parameters is required due to the new few-shots learning. For example, changing the default learning rate (1e-4)  in  \cite{yu2021lifelong}  to (6e-4) could help improve the final accuracy from ~0.1 to ~0.4. And some other hyper-parameters, i.e. the size of experience replay are also sensitive to the few-shots learning. We believe that a more concrete hyper-paramter search could further improve the performance. 2.  \cite{yu2021lifelong}  is not designed for a few-shot learning setting; there are thousands of  training data in the original experiments while there are only 10 training data in our setting. However, we believe that we could combine our model with his proposed method of knowledge distillation + knowledge transfer strategy. 3.  \cite{yu2021lifelong} adopts a different formulation of incremental event detection.
+We also implemented a model of  \cite{yu2021lifelong} following our experimental setup. However, this method could only reach an accuracy of ~0.4 while our method or KCN could reach ~0.7. There are some possible explanations for this result: 
+\begin{enumerate}[noitemsep]
+\item There might be some implementation errors of  \cite{yu2021lifelong} or a different configuration of hyper-parameters is required due to the new few-shots learning. For example, changing the default learning rate (1e-4)  in  \cite{yu2021lifelong}  to (6e-4) could help improve the final accuracy from ~0.1 to ~0.4. And some other hyper-parameters, i.e. the size of experience replay are also sensitive to the few-shots learning. We believe that a more concrete hyper-paramter search could further improve the performance. 
+
+\item \cite{yu2021lifelong}  is not designed for a few-shot learning setting; there are thousands of  training data in the original experiments while there are only 10 training data in our setting. However, we believe that we could combine our model with his proposed method of knowledge distillation + knowledge transfer strategy. 
+
+\item \cite{yu2021lifelong} adopts a different formulation of incremental event detection.
+\end{enumerate}
 
 We test our meta-learned representation for continual few-shot event detection by using it as the language model initialization for KCN. (KCN+ours), and adding a simple fully connected layer for fine-tuning(ours). 
 
