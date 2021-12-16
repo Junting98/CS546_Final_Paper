@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 DEC 2021 02:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 DEC 2021 03:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -825,20 +825,20 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./abstract.tex) (./intro.tex [1{/usr/local/texlive/2017/texmf-var/fonts/map/p
-dftex/updmap/pdftex.map}
-
-
-
-]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 22.
+ (./abstract.tex) (./intro.tex
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 13.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
-)
-(./formulation.tex <imgs/framework.jpg, id=84, 663.47874pt x 325.215pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+])
+(./formulation.tex <imgs/framework.jpg, id=62, 663.47874pt x 325.215pt>
 File: imgs/framework.jpg Graphic file (type jpg)
 
 <use imgs/framework.jpg>
@@ -848,13 +848,13 @@ Package pdftex.def Info: imgs/framework.jpg used on input line 4.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 
-<imgs/meta-training.png, id=89, 721.69624pt x 443.6575pt>
+<imgs/meta-training.png, id=67, 721.69624pt x 443.6575pt>
 File: imgs/meta-training.png Graphic file (type png)
 
 <use imgs/meta-training.png>
 Package pdftex.def Info: imgs/meta-training.png used on input line 6.
 (pdftex.def)             Requested size: 433.02109pt x 266.19655pt.
- [2]
+
 Underfull \hbox (badness 6792) in paragraph at lines 19--20
 []\T1/ptm/m/n/10.95 (+20) where $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OMS/
 cmsy/m/n/10.95 T\OT1/cmr/m/n/10.95 )$ \T1/ptm/m/n/10.95 (+20) is the as-sumed d
@@ -890,19 +890,16 @@ Underfull \hbox (badness 2261) in paragraph at lines 24--29
  T \OT1/cmr/m/n/10.95 =
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
-(./experiment.tex
+[2]) (./experiment.tex
 Underfull \vbox (badness 3919) has occurred while \output is active []
 
- [3 <./imgs/framework.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 16--16
 [][][][][]$\T1/pcr/m/n/9 https : / / catalog . ldc . upenn . edu /
  []
 
-<imgs/MAVEN_ACE.jpg, id=137, 1752.90884pt x 406.1574pt>
+[3 <./imgs/framework.jpg>]
+<imgs/MAVEN_ACE.jpg, id=115, 1752.90884pt x 406.1574pt>
 File: imgs/MAVEN_ACE.jpg Graphic file (type jpg)
 
 <use imgs/MAVEN_ACE.jpg>
@@ -914,16 +911,17 @@ Overfull \hbox (35.56703pt too wide) in paragraph at lines 26--27
  []
 
 [4 <./imgs/meta-training.png>]
-<imgs/ACE_MAVEN.jpg, id=171, 631.6398pt x 404.712pt>
+<imgs/ACE_MAVEN.jpg, id=144, 631.6398pt x 404.712pt>
 File: imgs/ACE_MAVEN.jpg Graphic file (type jpg)
  <use imgs/ACE_MAVEN.jpg>
 Package pdftex.def Info: imgs/ACE_MAVEN.jpg used on input line 71.
 (pdftex.def)             Requested size: 176.85794pt x 113.31859pt.
+)
+(./related_works.tex) [5 <./imgs/MAVEN_ACE.jpg> <./imgs/ACE_MAVEN.jpg>]
+(./conclusion.tex)
+Underfull \vbox (badness 5970) has occurred while \output is active []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [5 <./imgs/MAVEN_ACE.jpg>] (./related_works.tex) (./conclusion.tex)
 
 Package natbib Warning: Citation `borschinger-johnson-2011-particle' undefined 
 on input line 95.
@@ -941,7 +939,7 @@ Underfull \hbox (badness 1776) in paragraph at lines 6--11
 \T1/ptm/m/n/10 seiny, Mar-cus Rohrbach, and Tinne Tuyte-laars.
  []
 
-[6 <./imgs/ACE_MAVEN.jpg>]
+[6]
 Underfull \hbox (badness 1377) in paragraph at lines 104--107
 []\T1/ptm/m/n/10 Khurram Javed and Martha White. 2019.  Meta-
  []
@@ -972,14 +970,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--183
 []\T1/ptm/m/n/10 Sylvestre-Alvise Re-buffi, Alexan-der Kolesnikov,
  []
 
-[7])
+)
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
-[8
-
-]
+[7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
@@ -989,13 +985,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
- 11078 strings out of 492995
- 166730 string characters out of 6132704
- 299925 words of memory out of 5000000
+ 11070 strings out of 492995
+ 166669 string characters out of 6132704
+ 300925 words of memory out of 5000000
  14217 multiletter control sequences out of 15000+600000
- 52360 words of font info for 174 fonts, out of 8000000 for 9000
+ 52019 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,16n,40p,1071b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,16n,40p,1071b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1011,10 +1007,10 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on main.pdf (8 pages, 657109 bytes).
+Output written on main.pdf (7 pages, 654963 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 288 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
  22549 words of extra memory for PDF output out of 24883 (max. 10000000)
 

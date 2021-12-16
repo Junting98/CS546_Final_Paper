@@ -9,33 +9,32 @@ The costs on the memory and computing can be dramatically high. A natural approa
 Another problem for the continual event detection is the \textit{catastrophic forgetting}\citep{mccloskey1989catastrophic, french1999catastrophic}. Another intuitive method to handle the continual event detection problem is to finetune pre-trained models on new data. However, this method can cause catastrophic forgetting problem: after finetuning the models on new event types, the accuracy of identifying old types suffer from significant dropping. 
 
 Much efforts have been tired to address the catastrophic forgetting problem. The major methods can be categorized into three classes: 
-\begin{enumerate}[noitemsep]
+\begin{itemize}[noitemsep]
   \item Significant parameters based methods: try to preserve important parameters of the models learned on the old classes when learning the new classes \citep{kirkpatrick2017overcoming, aljundi2018memory}.
-  \item Rehearsal methods: combine older samples into the new data during training, by replaying older data such as \citet{rebuffi2017icarl, hou2019learning}, by utilizing generative models trained on older data such as \citet{shin2017continual}, by leveraging knowledge distillation that produces representations or targets from older predictors \citep{li2017learning, cao2020incremental}.
+  \item Rehearsal methods: combine older samples into the new data during training, by replaying older data such as \citep{rebuffi2017icarl, hou2019learning}, by utilizing generative models trained on older data such as          \citep{shin2017continual}, by leveraging knowledge distillation that produces representations or targets from older predictors \citep{li2017learning, cao2020incremental}.
   \item Sparse representation methods, which leave room for future learning and mitigate the catastrophic forgetting issues \citep{liu2019utility, aljundi2018selfless}.
-\end{enumerate}
-
-Moreover, the distribution of event types is naturally imbalanced in the natural language. This is also called Long-tail distribution \citep{yu2021lifelong}. Previous methods \citep{nguyen2016two, cao2020incremental} tend to focus on the frequent event types which can gain low performance on rare event types. Predicting the events types with few data points is also called \textit{few-shot event detection}, and a method using \textit{Causal Intervention} was introduced to address the few-shot problem \citep{chen2021honey}.
-
-Therefore, this paper proposes a method trying to address all the problems above:
-\begin{itemize}[noitemsep]
-  \item Learn new types and dynamic ontology when new data come;
-  \item Reduce high cost on the computation and storage for systems;
-  \item Avoid the catastrophic forgetting problem when learning new knowledge;
-  \item Handle the long-tail distribution problem for event types.
 \end{itemize}
 
-Meta-learning based methods have achieved great success in various learning paradigms, i.e. few-shot learning, online learning and continual learning \citep{harrison2019continuous, javed2019meta}. They achieve state-of-the-art performance on tasks such as few-shot image classification. Because the meta-learning methods proved to be useful in: 
+
+Moreover, the distribution of event types is naturally imbalanced in the natural language.  New events are inherently long-tail \citep{yu2021lifelong} as they usually have significantly fewer instances. Previous methods \citep{nguyen2016two, cao2020incremental} tend to have lower performance on rare event types.  
+
+The objective of this project is to develop a framework that can:
 \begin{itemize}[noitemsep]
-  \item Online learning -- learn new types and dynamic ontology when new data come;
-  \item No need to save much old data -- reduce high cost on the computation and storage for systems;
-  \item Continual learning -- avoid the catastrophic forgetting problem when learning new knowledge;
-  \item Few-shot learning -- handle the long-tail distribution problem for event types.
+\item Learn new types and dynamic ontology when new data come;
+ \item Reduce high cost on the computation and storage for systems;
+ \item Avoid the catastrophic forgetting problem when learning new knowledge;
+\item Handle the long-tail distribution of new event types.
 \end{itemize}
-this paper is motivated to explore a meta-learning framework that can be effectively applied to continual event detection setup and also address the long-tail problem. The main contribution of this paper: 
+
+Meta-learning based methods have achieved great success in various learning paradigms, i.e. few-shot learning, online learning and continual learning \citep{harrison2019continuous, javed2019meta}. They achieve state-of-the-art performance on tasks such as few-shot image classification. 
+
+
+
+Therefore, this paper is motivated to explore a meta-learning framework that can be effectively applied to continual event detection setup and also address the long-tail problem.  The main contribution of this paper:
+
 \begin{itemize}[noitemsep]
-  \item We adapt the meta-learning framework based on \citet{javed2019meta} to get meta-representation to address the four major problems above in the continual event detection;
-  \item Our base model results show significant improvements over both the fine-tune and pre-trained fine-tune baselines.;
-  \item Our model-agnostic representation module can be used as pre-trained language model initialization for better performance
-  \item Our framework can be easily adapted to other continual Information Extraction (IE) tasks.
+\item We incorporate the long-tail problem of new event types and proposed a new event detection task: continual few-shot event detection.
+
+  \item We developed a meta-learning based model-agnostic representation module can be used as pre-trained language model initialization for the continual few-shot event detection task.
+  \item Our model shows significant performance gain over fine-tune based baselines and is on par with state-of-the-art continual event detection baselines.
 \end{itemize}
