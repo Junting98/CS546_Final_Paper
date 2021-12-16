@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{31}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Aljundi et~al.(2018{\natexlab{a}})Aljundi, Babiloni, Elhoseiny,
@@ -64,6 +64,13 @@ Shumin Deng, Ningyu Zhang, Jiaojian Kang, Yichi Zhang, Wei Zhang, and Huajun
   few-shot event detection.
 \newblock In \emph{Proceedings of the 13th International Conference on Web
   Search and Data Mining}, pages 151--159.
+
+\bibitem[{Devlin et~al.(2018)Devlin, Chang, Lee, and
+  Toutanova}]{devlin2018bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock \emph{arXiv preprint arXiv:1810.04805}.
 
 \bibitem[{Du and Cardie(2020)}]{du2020event}
 Xinya Du and Claire Cardie. 2020.

@@ -13,45 +13,45 @@ Warning--I didn't find a database entry for "harper-2014-learning"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in liu2019utility
 Warning--empty journal in ring1994continual
-You've used 30 entries,
+You've used 31 entries,
             3571 wiz_defined-function locations,
-            870 strings with 12006 characters,
-and the built_in function-call counts, 24559 in all, are:
-= -- 2103
-> -- 1292
+            874 strings with 12204 characters,
+and the built_in function-call counts, 25215 in all, are:
+= -- 2155
+> -- 1334
 < -- 29
-+ -- 415
-- -- 378
-* -- 1618
-:= -- 3563
-add.period$ -- 123
-call.type$ -- 30
-change.case$ -- 307
-chr.to.int$ -- 31
-cite$ -- 32
-duplicate$ -- 1666
-empty$ -- 1704
-format.name$ -- 479
-if$ -- 5392
++ -- 428
+- -- 390
+* -- 1663
+:= -- 3667
+add.period$ -- 127
+call.type$ -- 31
+change.case$ -- 316
+chr.to.int$ -- 32
+cite$ -- 33
+duplicate$ -- 1710
+empty$ -- 1746
+format.name$ -- 494
+if$ -- 5531
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 333
-newline$ -- 154
-num.names$ -- 120
-pop$ -- 774
+missing$ -- 342
+newline$ -- 159
+num.names$ -- 124
+pop$ -- 796
 preamble$ -- 1
-purify$ -- 244
+purify$ -- 252
 quote$ -- 0
-skip$ -- 1160
+skip$ -- 1191
 stack$ -- 0
-substring$ -- 944
-swap$ -- 844
+substring$ -- 955
+swap$ -- 862
 text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 270
+type$ -- 279
 warning$ -- 2
-while$ -- 141
+while$ -- 144
 width$ -- 0
-write$ -- 390
+write$ -- 402
 (There were 5 warnings)

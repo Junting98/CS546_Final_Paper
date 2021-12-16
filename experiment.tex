@@ -28,10 +28,10 @@ We adopted two widely used datasets for event detection and created the continua
 
 
 \subsection{Meta-Training and Meta-Testing Detail}
-\textbf{Meta-Training}: 
+\textbf{Meta-Training}: We used Bert \citep{devlin2018bert} as the representation module and a fully connected layer as the classifier.  In each training episode, we sample a continuous data trajectory of event instances.  The trajectory construction follows \ref{img:2}. 
 
 \noindent
-\textbf{Meta-Testing}: 
+\textbf{Meta-Testing}: During the meta testing stage,  we followed the continual few-shot event detection setup. The support set for each event type comes in a class-incremental way. After each batch of support set arrives, we tested the model on all seen query sets. 
 
 \subsection{Baselines}
 We compare out approach with the following baselines: 
