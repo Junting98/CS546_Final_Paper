@@ -4,7 +4,7 @@ Because Continual Event Detection (CED) in Natural Language problem can be viewe
 A Continual Event Detection (CED) in Natural Language problem consists of an endless data stream:
 \[\mathcal{T} = (X_1, Y_1), (X_2, Y_2), \dots, (X_t, Y_t), \dots\]
 for inputs $X_t$ (event mentions) and targets $Y_t$ (event types), from sets $\mathcal{X}$ and $\mathcal{Y}$. The random vector $Y_t$ is sampled
-according to an unknown distribution $p(Y|X_t)$. We define $S_k = (X_j+1, Y_j+1), (X_j+2, Y_j+2), \dots, (X_j+k, Y_j+k)$ as a trajectory of length k which is smapled randomly from the CET problem $\mathcal{T}$, and $p(S_k|\mathcal{T})$ represents a distribution over all the trajectories $S_k$.
+according to an unknown distribution $p(Y|X_t)$. We define $S_k = (X_{j+1}, Y_{j+1}), (X_{j+2}, Y_{j+2}), \dots, (X_{j+k}, Y_{j+k})$ as a trajectory of length k which is smapled randomly from the CET problem $\mathcal{T}$, and $p(S_k|\mathcal{T})$ represents a distribution over all the trajectories $S_k$.
 
 Our goal is to learn a function $f_W,\theta$ which predict $Y_t$ for $X_t$, and minimize the loss function below for a CED problem:
 \begin{equation}
