@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 DEC 2021 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 DEC 2021 00:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,14 +846,14 @@ Package pdftex.def Info: imgs/framework.jpg used on input line 4.
 (pdftex.def)             Requested size: 398.0903pt x 195.1305pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 10.
- [2]) (./methods.tex
-<imgs/meta-training.png, id=116, 721.69624pt x 443.6575pt>
+) (./methods.tex
+<imgs/meta-training.png, id=94, 721.69624pt x 443.6575pt>
 File: imgs/meta-training.png Graphic file (type png)
 
 <use imgs/meta-training.png>
 Package pdftex.def Info: imgs/meta-training.png used on input line 6.
 (pdftex.def)             Requested size: 433.02109pt x 266.19655pt.
-
+ [2]
 Underfull \hbox (badness 6792) in paragraph at lines 19--20
 []\T1/ptm/m/n/10.95 (+20) where $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OMS/
 cmsy/m/n/10.95 T\OT1/cmr/m/n/10.95 )$ \T1/ptm/m/n/10.95 (+20) is the as-sumed d
@@ -873,7 +873,7 @@ Underfull \hbox (badness 1242) in paragraph at lines 19--20
 0.95 T\OT1/cmr/m/n/10.95 )$\T1/ptm/m/n/10.95 (+20) . And
  []
 
-[3 <./imgs/framework.jpg>]
+
 Underfull \hbox (badness 3514) in paragraph at lines 24--29
 \T1/ptm/m/n/10.95 (+20) in meta-training phase, which is com-posed
  []
@@ -889,7 +889,8 @@ Underfull \hbox (badness 2261) in paragraph at lines 24--29
  T \OT1/cmr/m/n/10.95 =
  []
 
-) (./experiment.tex <imgs/MAVEN_ACE.jpg, id=130, 1752.90884pt x 406.1574pt>
+[3 <./imgs/framework.jpg>]) (./experiment.tex
+<imgs/MAVEN_ACE.jpg, id=126, 1752.90884pt x 406.1574pt>
 File: imgs/MAVEN_ACE.jpg Graphic file (type jpg)
 
 <use imgs/MAVEN_ACE.jpg>
@@ -905,14 +906,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--21
 [][][][][]$\T1/pcr/m/n/9 https : / / catalog . ldc . upenn . edu /
  []
 
-[4 <./imgs/meta-training.png>] [5 <./imgs/MAVEN_ACE.jpg>]
-<imgs/ACE_MAVEN.jpg, id=181, 631.6398pt x 404.712pt>
+[4 <./imgs/meta-training.png>]
+<imgs/ACE_MAVEN.jpg, id=167, 631.6398pt x 404.712pt>
 File: imgs/ACE_MAVEN.jpg Graphic file (type jpg)
  <use imgs/ACE_MAVEN.jpg>
 Package pdftex.def Info: imgs/ACE_MAVEN.jpg used on input line 71.
 (pdftex.def)             Requested size: 176.85794pt x 113.31859pt.
-)
-(./related_works.tex) (./conclusion.tex) [6 <./imgs/ACE_MAVEN.jpg>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [5 <./imgs/MAVEN_ACE.jpg>] (./related_works.tex) (./conclusion.tex)
 
 Package natbib Warning: Citation `borschinger-johnson-2011-particle' undefined 
 on input line 95.
@@ -930,7 +934,7 @@ Underfull \hbox (badness 1776) in paragraph at lines 6--11
 \T1/ptm/m/n/10 seiny, Mar-cus Rohrbach, and Tinne Tuyte-laars.
  []
 
-
+[6 <./imgs/ACE_MAVEN.jpg>]
 Underfull \hbox (badness 1377) in paragraph at lines 97--100
 []\T1/ptm/m/n/10 Khurram Javed and Martha White. 2019.  Meta-
  []
@@ -940,7 +944,7 @@ Underfull \hbox (badness 5217) in paragraph at lines 97--100
 \T1/ptm/m/n/10 learning rep-re-sen-ta-tions for con-tin-ual learn-ing.
  []
 
-[7]
+
 Underfull \hbox (badness 1365) in paragraph at lines 134--139
 []\T1/ptm/m/n/10 Vincent Liu, Rak-sha Ku-maraswamy, Lei Le, and
  []
@@ -961,7 +965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--176
 []\T1/ptm/m/n/10 Sylvestre-Alvise Re-buffi, Alexan-der Kolesnikov,
  []
 
-)
+[7])
 
 Package natbib Warning: There were undefined citations.
 
@@ -978,13 +982,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
- 11073 strings out of 492995
- 166642 string characters out of 6132704
- 298859 words of memory out of 5000000
+ 11072 strings out of 492995
+ 166630 string characters out of 6132704
+ 299859 words of memory out of 5000000
  14214 multiletter control sequences out of 15000+600000
  52135 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,19n,40p,1055b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,19n,40p,1055b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -999,10 +1003,10 @@ xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
 dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 654563 bytes).
+Output written on main.pdf (8 pages, 651387 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
  22549 words of extra memory for PDF output out of 24883 (max. 10000000)
 
