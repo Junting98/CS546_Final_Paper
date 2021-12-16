@@ -1,5 +1,19 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{30}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Aljundi et~al.(2018{\natexlab{a}})Aljundi, Babiloni, Elhoseiny,
+  Rohrbach, and Tuytelaars}]{aljundi2018memory}
+Rahaf Aljundi, Francesca Babiloni, Mohamed Elhoseiny, Marcus Rohrbach, and
+  Tinne Tuytelaars. 2018{\natexlab{a}}.
+\newblock Memory aware synapses: Learning what (not) to forget.
+\newblock In \emph{Proceedings of the European Conference on Computer Vision
+  (ECCV)}, pages 139--154.
+
+\bibitem[{Aljundi et~al.(2018{\natexlab{b}})Aljundi, Rohrbach, and
+  Tuytelaars}]{aljundi2018selfless}
+Rahaf Aljundi, Marcus Rohrbach, and Tinne Tuytelaars. 2018{\natexlab{b}}.
+\newblock Selfless sequential learning.
+\newblock \emph{arXiv preprint arXiv:1806.05421}.
 
 \bibitem[{Ando and Zhang(2005)}]{Ando2005}
 Rie~Kubota Ando and Tong Zhang. 2005.
@@ -13,11 +27,178 @@ Galen Andrew and Jianfeng Gao. 2007.
 \newblock In \emph{Proceedings of the 24th International Conference on Machine
   Learning}, pages 33--40.
 
+\bibitem[{Bronstein et~al.(2015)Bronstein, Dagan, Li, Ji, and
+  Frank}]{bronstein2015seed}
+Ofer Bronstein, Ido Dagan, Qi~Li, Heng Ji, and Anette Frank. 2015.
+\newblock Seed-based event trigger labeling: How far can event descriptions get
+  us?
+\newblock In \emph{Proceedings of the 53rd Annual Meeting of the Association
+  for Computational Linguistics and the 7th International Joint Conference on
+  Natural Language Processing (Volume 2: Short Papers)}, pages 372--376.
+
+\bibitem[{Cao et~al.(2020)Cao, Chen, Zhao, and Wang}]{cao2020incremental}
+Pengfei Cao, Yubo Chen, Jun Zhao, and Taifeng Wang. 2020.
+\newblock Incremental event detection via knowledge consolidation networks.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 707--717.
+
+\bibitem[{Chen et~al.(2021)Chen, Lin, Han, and Sun}]{chen2021honey}
+Jiawei Chen, Hongyu Lin, Xianpei Han, and Le~Sun. 2021.
+\newblock Honey or poison? solving the trigger curse in few-shot event
+  detection via causal intervention.
+\newblock \emph{arXiv preprint arXiv:2109.05747}.
+
+\bibitem[{Chen et~al.(2015)Chen, Xu, Liu, Zeng, and Zhao}]{chen2015event}
+Yubo Chen, Liheng Xu, Kang Liu, Daojian Zeng, and Jun Zhao. 2015.
+\newblock Event extraction via dynamic multi-pooling convolutional neural
+  networks.
+\newblock In \emph{Proceedings of the 53rd Annual Meeting of the Association
+  for Computational Linguistics and the 7th International Joint Conference on
+  Natural Language Processing (Volume 1: Long Papers)}, pages 167--176.
+
+\bibitem[{Deng et~al.(2020)Deng, Zhang, Kang, Zhang, Zhang, and
+  Chen}]{deng2020meta}
+Shumin Deng, Ningyu Zhang, Jiaojian Kang, Yichi Zhang, Wei Zhang, and Huajun
+  Chen. 2020.
+\newblock Meta-learning with dynamic-memory-based prototypical network for
+  few-shot event detection.
+\newblock In \emph{Proceedings of the 13th International Conference on Web
+  Search and Data Mining}, pages 151--159.
+
+\bibitem[{Du and Cardie(2020)}]{du2020event}
+Xinya Du and Claire Cardie. 2020.
+\newblock Event extraction by answering (almost) natural questions.
+\newblock \emph{arXiv preprint arXiv:2004.13625}.
+
+\bibitem[{Feng et~al.(2020)Feng, Yuan, and Zhang}]{feng2020probing}
+Rui Feng, Jie Yuan, and Chao Zhang. 2020.
+\newblock Probing and fine-tuning reading comprehension models for few-shot
+  event extraction.
+\newblock \emph{arXiv preprint arXiv:2010.11325}.
+
+\bibitem[{French(1999)}]{french1999catastrophic}
+Robert~M French. 1999.
+\newblock Catastrophic forgetting in connectionist networks.
+\newblock \emph{Trends in cognitive sciences}, 3(4):128--135.
+
+\bibitem[{Harrison et~al.(2019)Harrison, Sharma, Finn, and
+  Pavone}]{harrison2019continuous}
+James Harrison, Apoorva Sharma, Chelsea Finn, and Marco Pavone. 2019.
+\newblock Continuous meta-learning without tasks.
+\newblock \emph{arXiv preprint arXiv:1912.08866}.
+
+\bibitem[{Hou et~al.(2019)Hou, Pan, Loy, Wang, and Lin}]{hou2019learning}
+Saihui Hou, Xinyu Pan, Chen~Change Loy, Zilei Wang, and Dahua Lin. 2019.
+\newblock Learning a unified classifier incrementally via rebalancing.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 831--839.
+
+\bibitem[{Javed and White(2019)}]{javed2019meta}
+Khurram Javed and Martha White. 2019.
+\newblock Meta-learning representations for continual learning.
+\newblock \emph{arXiv preprint arXiv:1905.12588}.
+
+\bibitem[{Kindratenko et~al.(2020)Kindratenko, Mu, Zhan, Maloney, Hashemi,
+  Rabe, Xu, Campbell, Peng, and Gropp}]{HAL}
+Volodymyr Kindratenko, Dawei Mu, Yan Zhan, John Maloney, Sayed~Hadi Hashemi,
+  Benjamin Rabe, Ke~Xu, Roy Campbell, Jian Peng, and William Gropp. 2020.
+\newblock \href {https://doi.org/10.1145/3311790.3396649} {Hal: Computer system
+  for scalable deep learning}.
+\newblock In \emph{Practice and Experience in Advanced Research Computing},
+  PEARC '20, page 41–48, New York, NY, USA. Association for Computing
+  Machinery.
+
+\bibitem[{Kirkpatrick et~al.(2017)Kirkpatrick, Pascanu, Rabinowitz, Veness,
+  Desjardins, Rusu, Milan, Quan, Ramalho, Grabska-Barwinska
+  et~al.}]{kirkpatrick2017overcoming}
+James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume
+  Desjardins, Andrei~A Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka
+  Grabska-Barwinska, et~al. 2017.
+\newblock Overcoming catastrophic forgetting in neural networks.
+\newblock \emph{Proceedings of the national academy of sciences},
+  114(13):3521--3526.
+
+\bibitem[{Li and Hoiem(2017)}]{li2017learning}
+Zhizhong Li and Derek Hoiem. 2017.
+\newblock Learning without forgetting.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 40(12):2935--2947.
+
+\bibitem[{Liu et~al.(2020)Liu, Chen, Liu, Bi, and Liu}]{liu2020event}
+Jian Liu, Yubo Chen, Kang Liu, Wei Bi, and Xiaojiang Liu. 2020.
+\newblock Event extraction as machine reading comprehension.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 1641--1651.
+
+\bibitem[{Liu et~al.(2019)Liu, Kumaraswamy, Le, and White}]{liu2019utility}
+Vincent Liu, Raksha Kumaraswamy, Lei Le, and Martha White. 2019.
+\newblock The utility of sparse representations for control in reinforcement
+  learning.
+\newblock In \emph{Proceedings of the aaai conference on artificial
+  intelligence}, volume~33, pages 4384--4391.
+
+\bibitem[{Lu et~al.(2021)Lu, Lin, Xu, Han, Tang, Li, Sun, Liao, and
+  Chen}]{lu2021text2event}
+Yaojie Lu, Hongyu Lin, Jin Xu, Xianpei Han, Jialong Tang, Annan Li, Le~Sun,
+  Meng Liao, and Shaoyi Chen. 2021.
+\newblock Text2event: Controllable sequence-to-structure generation for
+  end-to-end event extraction.
+\newblock \emph{arXiv preprint arXiv:2106.09232}.
+
+\bibitem[{McCloskey and Cohen(1989)}]{mccloskey1989catastrophic}
+Michael McCloskey and Neal~J Cohen. 1989.
+\newblock Catastrophic interference in connectionist networks: The sequential
+  learning problem.
+\newblock In \emph{Psychology of learning and motivation}, volume~24, pages
+  109--165. Elsevier.
+
+\bibitem[{Nguyen et~al.(2016)Nguyen, Fu, Cho, and Grishman}]{nguyen2016two}
+Thien~Huu Nguyen, Lisheng Fu, Kyunghyun Cho, and Ralph Grishman. 2016.
+\newblock A two-stage approach for extending event detection to new types via
+  neural networks.
+\newblock In \emph{Proceedings of the 1st Workshop on Representation Learning
+  for NLP}, pages 158--165.
+
 \bibitem[{Rasooli and Tetreault(2015)}]{rasooli-tetrault-2015}
 Mohammad~Sadegh Rasooli and Joel~R. Tetreault. 2015.
 \newblock \href {http://arxiv.org/abs/1503.06733} {Yara parser: {A} fast and
   accurate dependency parser}.
 \newblock \emph{Computing Research Repository}, arXiv:1503.06733.
 \newblock Version 2.
+
+\bibitem[{Rebuffi et~al.(2017)Rebuffi, Kolesnikov, Sperl, and
+  Lampert}]{rebuffi2017icarl}
+Sylvestre-Alvise Rebuffi, Alexander Kolesnikov, Georg Sperl, and Christoph~H
+  Lampert. 2017.
+\newblock icarl: Incremental classifier and representation learning.
+\newblock In \emph{Proceedings of the IEEE conference on Computer Vision and
+  Pattern Recognition}, pages 2001--2010.
+
+\bibitem[{Ring et~al.(1994)}]{ring1994continual}
+Mark~Bishop Ring et~al. 1994.
+\newblock Continual learning in reinforcement environments.
+
+\bibitem[{Shin et~al.(2017)Shin, Lee, Kim, and Kim}]{shin2017continual}
+Hanul Shin, Jung~Kwon Lee, Jaehong Kim, and Jiwon Kim. 2017.
+\newblock Continual learning with deep generative replay.
+\newblock \emph{arXiv preprint arXiv:1705.08690}.
+
+\bibitem[{Thrun(1998)}]{thrun1998lifelong}
+Sebastian Thrun. 1998.
+\newblock Lifelong learning algorithms.
+\newblock In \emph{Learning to learn}, pages 181--209. Springer.
+
+\bibitem[{Wang et~al.(2020)Wang, Wang, Han, Jiang, Han, Liu, Li, Li, Lin, and
+  Zhou}]{wang2020MAVEN}
+Xiaozhi Wang, Ziqi Wang, Xu~Han, Wangyi Jiang, Rong Han, Zhiyuan Liu, Juanzi
+  Li, Peng Li, Yankai Lin, and Jie Zhou. 2020.
+\newblock {MAVEN}: A massive general domain event detection dataset.
+\newblock In \emph{Proceedings of EMNLP 2020}.
+
+\bibitem[{Yu et~al.(2021)Yu, Ji, and Natarajan}]{yu2021lifelong}
+Pengfei Yu, Heng Ji, and Prem Natarajan. 2021.
+\newblock Lifelong event detection with knowledge transfer.
+\newblock In \emph{Proceedings of the 2021 Conference on Empirical Methods in
+  Natural Language Processing}, pages 5278--5290.
 
 \end{thebibliography}

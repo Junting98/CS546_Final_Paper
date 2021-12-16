@@ -11,45 +11,47 @@ Warning--I didn't find a database entry for "borschinger-johnson-2011-particle"
 Warning--I didn't find a database entry for "goodman-etal-2016-noise"
 Warning--I didn't find a database entry for "harper-2014-learning"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 3 entries,
+Warning--can't use both volume and number fields in liu2019utility
+Warning--empty journal in ring1994continual
+You've used 30 entries,
             3571 wiz_defined-function locations,
-            718 strings with 6131 characters,
-and the built_in function-call counts, 2117 in all, are:
-= -- 196
-> -- 71
-< -- 4
-+ -- 23
-- -- 18
-* -- 127
-:= -- 325
-add.period$ -- 13
-call.type$ -- 3
-change.case$ -- 24
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 140
-empty$ -- 162
-format.name$ -- 33
-if$ -- 468
-int.to.chr$ -- 1
+            870 strings with 12006 characters,
+and the built_in function-call counts, 24559 in all, are:
+= -- 2103
+> -- 1292
+< -- 29
++ -- 415
+- -- 378
+* -- 1618
+:= -- 3563
+add.period$ -- 123
+call.type$ -- 30
+change.case$ -- 307
+chr.to.int$ -- 31
+cite$ -- 32
+duplicate$ -- 1666
+empty$ -- 1704
+format.name$ -- 479
+if$ -- 5392
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 28
-newline$ -- 20
-num.names$ -- 12
-pop$ -- 59
+missing$ -- 333
+newline$ -- 154
+num.names$ -- 120
+pop$ -- 774
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 244
 quote$ -- 0
-skip$ -- 116
+skip$ -- 1160
 stack$ -- 0
-substring$ -- 92
-swap$ -- 70
-text.length$ -- 1
+substring$ -- 944
+swap$ -- 844
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 27
-warning$ -- 0
-while$ -- 14
+type$ -- 270
+warning$ -- 2
+while$ -- 141
 width$ -- 0
-write$ -- 44
-(There were 3 warnings)
+write$ -- 390
+(There were 5 warnings)
