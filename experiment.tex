@@ -16,10 +16,10 @@ We adopted two widely used datasets for event detection and created the continua
 \textbf{ACE 2005 English} \footnote{\url{https://catalog.ldc.upenn.edu/LDC2006T06}}: ACE 2005 English contains 33 event types.  To conduct our few-shot experiment, we filtered out events that have less than 10 interactions.
 
 \noindent
-\textbf{MAVEN} \citep{wang2020MAVEN}: MAVEN dataset contains 168 event types and is much more diverse compared to the ACE05 dataset. Each event types also has a significantly more instances.  Due to limited computational resources,  we choose keep the top 50 event types by number of instances.  
+\textbf{MAVEN} \citep{wang2020MAVEN}: MAVEN dataset contains 168 event types and are much more diverse compared to the ACE05 dataset. Each event type also has significantly more instances.  Due to limited computational resources, we choose to keep the top 50 event types by number of instances.  
 
 \noindent
-\textbf{Continual Few-shot Event Detection}: There is no available benchmark for continual few-shot event detection. Therefor, we propose the following construction method: for a given dataset,  we first construct a few-shot event detection dataset following a similar setup as \citep{chen2021honey}.  In particular,  for every event type,  we subsample its instances to simulate a few-shot condition.  For each event type, we randomly sample few instances as the support set, and the all other instances are used as the query set for evaluating.  For the continual event detection,  we followed the setup in \citep{cao2020incremental}.  We exploit the data of the top 10 most frequent event classes for continual learning. One new event class will be available for the model at each time, and we test the model on all previously seen event types. 
+\textbf{Continual Few-shot Event Detection}: There is no available benchmark for continual few-shot event detection. Therefore, we propose the following construction method: for a given dataset,  we first construct a few-shot event detection dataset following a similar setup as \citep{chen2021honey}.  In particular,  for every event type,  we subsample its instances to simulate a few-shot condition.  For each event type, we randomly sample few instances as the support set, and the all other instances are used as the query set for evaluating.  For the continual event detection,  we followed the setup in \citep{cao2020incremental}.  We exploit the data of the top 10 most frequent event classes for continual learning. One new event class will be available for the model at each time, and we test the model on all previously seen event types. 
 
 \begin{figure*}[ht]
 \centering
@@ -28,7 +28,7 @@ We adopted two widely used datasets for event detection and created the continua
     \label{img:result_ACE}
 \end{figure*}
 \subsection{Meta-Training and Meta-Testing Detail}
-\textbf{Meta-Training}: We used Bert \citep{devlin2018bert} as the representation module and a fully connected layer as the classifier.  In each training episode, we sample a continuous data trajectory of event instances.  The trajectory construction follows \ref{img:2}. 
+\textbf{Meta-Training}: We used BERT \citep{devlin2018bert} as the representation module and a fully connected layer as the classifier.  In each training episode, we sample a continuous data trajectory of event instances.  The trajectory construction follows \ref{img:2}. 
 
 \noindent
 \textbf{Meta-Testing}: During the meta testing stage,  we followed the continual few-shot event detection setup. The support set for each event type comes in a class-incremental way. After each batch of support set arrives, we tested the model on all seen query sets. 
@@ -48,7 +48,7 @@ We compare out approach with the following baselines:
 %We have not include the work by \cite{yu2021lifelong} 
 We also implemented a model of  \cite{yu2021lifelong} following our experimental setup. However, this method could only reach an accuracy of ~0.4 while our method or KCN could reach ~0.7. There are some possible explanations for this result: 
 \begin{enumerate}[noitemsep]
-\item There might be some implementation errors of  \cite{yu2021lifelong} or a different configuration of hyper-parameters is required due to the new few-shots learning. For example, changing the default learning rate (1e-4)  in  \cite{yu2021lifelong}  to (6e-4) could help improve the final accuracy from ~0.1 to ~0.4. And some other hyper-parameters, i.e. the size of experience replay are also sensitive to the few-shots learning. We believe that a more concrete hyper-paramter search could further improve the performance. 
+\item We might have some implementation errors of  \cite{yu2021lifelong} or a different configuration of hyper-parameters is required due to the new few-shot learning. For example, changing the default learning rate (1e-4)  in  \cite{yu2021lifelong}  to (6e-4) could help improve the final accuracy from ~0.1 to ~0.4. And some other hyper-parameters, i.e. the size of experience replay are also sensitive to the few-shot learning. We believe that a more concrete hyper-parameter search could further improve the performance. 
 
 \item \cite{yu2021lifelong}  is not designed for a few-shot learning setting; there are thousands of  training data in the original experiments while there are only 10 training data in our setting. However, we believe that we could combine our model with his proposed method of knowledge distillation + knowledge transfer strategy. 
 
