@@ -15,7 +15,7 @@ Much efforts have been tired to address the catastrophic forgetting problem. The
   \item Sparse representation methods, which leave room for future learning and mitigate the catastrophic forgetting issues \citep{liu2019utility, aljundi2018selfless}.
 \end{enumerate}
 
-Moreover, the distribution of event types is naturally imbalanced in the natural language. This is also called Long-tail distribution \citep{yu2021lifelong}, which means many event types only have a small number of data points while some event types have a large of number of mentions. Previous methods \citep{nguyen2016two, cao2020incremental} tend to focus on the frequent event types which can gain low performance on rare event types. Predicting the events types with few data points is also called \textit{few-shot event detection}, and a method using \textit{Causal Intervention} was introduced to address the few-shot problem \citep{chen2021honey}.
+Moreover, the distribution of event types is naturally imbalanced in the natural language. This is also called Long-tail distribution \citep{yu2021lifelong}. Previous methods \citep{nguyen2016two, cao2020incremental} tend to focus on the frequent event types which can gain low performance on rare event types. Predicting the events types with few data points is also called \textit{few-shot event detection}, and a method using \textit{Causal Intervention} was introduced to address the few-shot problem \citep{chen2021honey}.
 
 Therefore, this paper proposes a method trying to address all the problems above:
 \begin{itemize}[noitemsep]

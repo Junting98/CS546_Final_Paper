@@ -6,7 +6,9 @@
     \label{img:1}
 \end{figure*}
 
-Given a text sequence $w_{1:L}$ and a 
+Event detection(ED) is a traditional task in natural language processing. Given a text sequence $w_{1:L}$ and a text span of $\{s, t\}$, We want to classify the given text span into an event type.  In a continuous event detection(CED) setup, the training and testing are separated into several stages, denoted as $t$. At each new stage$t$,   a steam of new data $\mathcal{D}^t = (X_1, Y_1), (X_2, Y_2), \dots, (X_ku Y_k), \dots$ arrives.  In this project, all data in $\mathcal{D}^t $ has the same classes, denoted as $C^{t}$.  $C^t \cap C^{t'}  = \emptyset$, meaning that at each stage,  the model will always receive a stream of data from unseen event types.  At each time stage $t$, the event detection model uses $\mathcal{D}^t $ to update its parameters, and the updated model should achieve good performance on all previously observed event classes.  Therefore, at each stage, we test the model on $\cup_{i=1}^t \mathcal{D}^i$, and the model should give a prediction from  $\cup_{i=1}^t C^i$. 
+
+There are usually few instances of newly seen event types in a real-world scenario, making the new events inherently long-tailed. Therefore, in this project, we simulate such long-tail distribution of new events by formulating the CED problem as a continual few-shot event detection problem. 
 
 
 %At first, introduce some Automatic Content Extraction (ACE) terminologies to help understand the Event Detection tasks \citep{cao2020incremental}: "\textbf{Event trigger} refers to a word that most clearly expresses the occurrence of an event. \textbf{Event arguments} are participants of the event. \textbf{Event mention} refers to a phrase or sentence within which an event is described."

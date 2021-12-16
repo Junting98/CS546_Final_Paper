@@ -7,12 +7,7 @@
 %      \label{fig:MAVEN_ACE}
 %  \end{figure*}
 
-\begin{figure*}[ht]
-\centering
-    \includegraphics[scale=0.28]{imgs/MAVEN_ACE.jpg}
-    \caption{10-shot, 5-shot, and 3-shot results using ACE05 as meta-testing set}
-    \label{img:result_ACE}
-\end{figure*}
+
   
 \subsection{Dataset and Continual Few-shot Event Detection Task}
 We adopted two widely used datasets for event detection and created the continual few-shot event detection tasks for evaluation. The dataset statistic are shown in Table~\ref{tab:stats}.
@@ -26,7 +21,12 @@ We adopted two widely used datasets for event detection and created the continua
 \noindent
 \textbf{Continual Few-shot Event Detection}: There is no available benchmark for continual few-shot event detection. Therefor, we propose the following construction method: for a given dataset,  we first construct a few-shot event detection dataset following a similar setup as \citep{chen2021honey}.  In particular,  for every event type,  we subsample its instances to simulate a few-shot condition.  For each event type, we randomly sample few instances as the support set, and the all other instances are used as the query set for evaluating.  For the continual event detection,  we followed the setup in \citep{cao2020incremental}.  We exploit the data of the top 10 most frequent event classes for continual learning. One new event class will be available for the model at each time, and we test the model on all previously seen event types. 
 
-
+\begin{figure*}[ht]
+\centering
+    \includegraphics[scale=0.28]{imgs/MAVEN_ACE.jpg}
+    \caption{10-shot, 5-shot, and 3-shot results using ACE05 as meta-testing set}
+    \label{img:result_ACE}
+\end{figure*}
 \subsection{Meta-Training and Meta-Testing Detail}
 \textbf{Meta-Training}: We used Bert \citep{devlin2018bert} as the representation module and a fully connected layer as the classifier.  In each training episode, we sample a continuous data trajectory of event instances.  The trajectory construction follows \ref{img:2}. 
 
