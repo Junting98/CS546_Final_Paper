@@ -9,8 +9,7 @@ according to an unknown distribution $p(Y|X_t)$. We define $S_k = (X_{j+1}, Y_{j
 Our goal is to learn a function $f_W,\theta$ which predict $Y_t$ for $X_t$, and minimize the loss function below for a CED problem:
 \begin{equation}
     \begin{split}
-    &\mathcal{L}_{C E D}(W, \theta)  \\
-    &\stackrel{\text { def }}{=}  \mathbb{E}\left[\ell\left(f_{W, \theta}(X), Y\right)\right] \\ 
+    &\mathcal{L}_{C E D}(W, \theta) \stackrel{\text { def }}{=}  \mathbb{E}\left[\ell\left(f_{W, \theta}(X), Y\right)\right] \\ 
     & =\int\left[\int \ell\left(f_{W, \theta}(x), y\right) p(y \mid x) d y\right] \mu(x) d x
     \end{split}
 \end{equation}
