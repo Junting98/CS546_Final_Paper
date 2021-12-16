@@ -28,7 +28,7 @@ As stated in section \ref{sec:mlr}, we update both Representation Module and Ada
 3. Next, we run evaluation of $\mathcal{S}_{query}$ using the updated network to obtain a loss; this loss would be back-propagated with respect to the initial parameters, $\theta$ of RM and $W_1$ of AM. \\
 4. Finally we update both of RM and AM, from  $\theta$, $W_1$ to $\theta'$, $W_1'$.
 
-For meta-testing, we would freeze Representation Module and simply update the Adaption Module following the step 2 in meta-training using the support set and then make predictions on query set with the updated Adaption Module and freeze Representation Module.
+For meta-testing, we would freeze Representation Module and simply update the Adaption Module following the step 2 in meta-training using the support set. Then we make predictions on query set with the updated Adaption Module and freeze Representation Module.
 \begin{figure*}[ht]
 \centering
     \includegraphics[scale=0.6]{imgs/meta-training.png}
